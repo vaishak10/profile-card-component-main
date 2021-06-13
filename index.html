@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <div class="half-circle-left"></div>
+  <div class="profile-background">
+    <div class="profile-sub-background">
+      <div class="profile-photo">
+          <img src="images/image-victor.jpg" alt="" />
+      </div>
+    </div>
+    <div class="profile-details-background">
+      <div class="profile-personal-details">
+        <div class="profile-name">Victor Crest</div>
+        <div class="profile-age">26</div>
+      </div>
+      <div class="profile-city">London</div>
+      <div>
+        <hr/>
+      </div>
+      <div class="profile-count">
+        <div class="profile-followers-count">80K</div>
+        <div class="profile-likes-count">803K</div>
+        <div class="profile-photos-count">1.4K</div>
+      </div>
+      <div class="profile-labels">
+        <div class="profile-followers-label">Followers</div>
+        <div class="profile-likes-label">Likes</div>
+        <div class="profile-photos-label">Photos</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="half-circle-right"></div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Vaishak K</a>.
   </div>
 </body>
+
 </html>
