@@ -20,7 +20,13 @@ hr{
     border-style: solid;
     border-color: hsl(40, 0%, 90%);
 }
-
+svg{
+    position: absolute;
+    left: 508px;
+    top: 100px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
 /*classess*/
 .attribution {
     font-size: 11px; 
@@ -60,8 +66,8 @@ hr{
     display: flex;
     flex-flow: column;
     text-align: center;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 508px;
+    margin-right: 508px;
     margin-top: 100px;
     border-radius: 12px;
     box-shadow: 0 8px 24px 0 rgb(0 0 0 / 20%), 0 8px 24px 0 rgb(0 0 0 / 20%);
@@ -74,7 +80,7 @@ hr{
 .profile-photo img {
     width: 100px;
     position: absolute;
-    left: 42px;
+    left: 30px;
     top: 68px;
     bottom: -68px;
     right: 0;
@@ -83,7 +89,7 @@ hr{
     padding: 6px;
 }
 .profile-sub-background{
-    padding: 92px;
+    padding: 95px;
     padding-top: 2.8rem;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -93,7 +99,7 @@ hr{
     background-image: radial-gradient(hsl(186, 60%, 65%) 30%,transparent 36%),radial-gradient(hsl(186, 60%, 65%) 30%, transparent 36%);
 }
 .profile-details-background{
-    padding-bottom: 24px;
+    padding-bottom: 20px;
     background: white;
     padding-top: 48px;
     margin: 0px;
@@ -104,13 +110,13 @@ hr{
     display: flex;
     column-gap: 14px;
     /* flex-direction: row; */
-    padding-left: 130px;
+    padding-left: 120px;
     /* padding-right: 180px; */
     padding-top: 20px;
 }
 .profile-city{
     display: flex;
-    padding-left: 160px;
+    padding-left: 150px;
     padding-top: 8px;
     /* margin-left: 90px; */
     padding-bottom: 10px;
@@ -118,15 +124,15 @@ hr{
 .profile-count{
     display: flex;
     flex-flow: row;
-    padding-left: 72px;
+    padding-left: 61px;
     column-gap: 60px;
-    padding-top: 14px;
+    padding-top: 20px;
 }
 .profile-labels{
     display: flex;
     flex-flow: row;
     font-size: 14px;
-    padding-left: 54px;
+    padding-left: 44px;
     column-gap: 60px;
     padding-top: 4px;
 }
