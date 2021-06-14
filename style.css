@@ -55,7 +55,7 @@ hr{
     border-top-left-radius: 650px;
     border-top-right-radius: 678px;
     position: absolute;
-    left: -160px;
+    left: -200px;
     bottom: 180px;
     transform: rotate(500deg);
     background-image:linear-gradient(to right,hsl(198, 78%, 81%),hsl(185, 78%, 37%));
