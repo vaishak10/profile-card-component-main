@@ -103,25 +103,26 @@ hr{
     display: grid;
     padding-bottom: 12px;
     background: white;
-    padding-top: 54px;
+    padding-top: 64px;
     margin: 0px;
     border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-right-radius: 14px;
 }
 .profile-personal-details{
     padding-left: 116px;
+    padding-bottom: 2px;
     display: grid;
     grid-template-columns: 0.5fr 0.1fr;
 }
 .profile-city{
     text-align: center;
-    padding-bottom: 6px;
+    padding-bottom: 12px;
 }
 .profile-count{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 4px;
-    padding-top: 12px;
+    padding-top: 14px;
 }
 .profile-labels{
     grid-template-columns: 1fr 1fr 1fr;
