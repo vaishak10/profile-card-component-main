@@ -10,9 +10,6 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
 }
-img{
-    border-radius: 50%;   
-}
 hr{
     margin-block-start: auto;
     margin-block-end: auto;
@@ -20,13 +17,7 @@ hr{
     border-style: solid;
     border-color: hsl(40, 0%, 90%);
 }
-svg{
-    position: absolute;
-    left: 508px;
-    top: 100px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
+
 /*classess*/
 .attribution {
     font-size: 11px; 
@@ -35,6 +26,27 @@ svg{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+.container{
+    overflow: hidden;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 42vh, left 50vw top 45vh;
+    background-attachment: fixed;
+}
+.card{
+    height: 140px;
+    width: 350px;
+    background: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 .half-circle-left{
     display: flex;
@@ -63,8 +75,7 @@ svg{
     z-index: -1;
 }
 .profile-background{
-    display: flex;
-    flex-flow: column;
+    display: grid;
     text-align: center;
     margin-left: 508px;
     margin-right: 508px;
@@ -72,68 +83,51 @@ svg{
     border-radius: 12px;
     box-shadow: 0 8px 24px 0 rgb(0 0 0 / 20%), 0 8px 24px 0 rgb(0 0 0 / 20%);
 }
-.profile-photo {
-    position: absolute;
-    width: 48px;
-    height: 48px; 
-}
 .profile-photo img {
     width: 100px;
-    position: absolute;
-    left: 30px;
-    top: 68px;
-    bottom: -68px;
+    position: fixed;
+    left: 8px;
+    top: 60px;
+    bottom: 192px;
     right: 0;
     margin: auto;
     background-color: #ffff;
     padding: 6px;
+    border-radius: 50%;   
 }
 .profile-sub-background{
-    padding: 95px;
-    padding-top: 2.8rem;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    background-color: hsl(186, 68%, 50%);
-    background-size: 50px 50px;
-    background-position: 4px 0px ,30px 30px;
-    background-image: radial-gradient(hsl(186, 60%, 65%) 30%,transparent 36%),radial-gradient(hsl(186, 60%, 65%) 30%, transparent 36%);
+    height: 139px;
+    width: 349px;
 }
 .profile-details-background{
-    padding-bottom: 20px;
+    display: grid;
+    padding-bottom: 12px;
     background: white;
-    padding-top: 48px;
+    padding-top: 54px;
     margin: 0px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 .profile-personal-details{
-    display: flex;
-    column-gap: 14px;
-    /* flex-direction: row; */
-    padding-left: 120px;
-    /* padding-right: 180px; */
-    padding-top: 20px;
+    padding-left: 116px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.1fr;
 }
 .profile-city{
-    display: flex;
-    padding-left: 150px;
-    padding-top: 8px;
-    /* margin-left: 90px; */
-    padding-bottom: 10px;
+    text-align: center;
+    padding-bottom: 6px;
 }
 .profile-count{
-    display: flex;
-    flex-flow: row;
-    padding-left: 61px;
-    column-gap: 60px;
-    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4px;
+    padding-top: 12px;
 }
 .profile-labels{
-    display: flex;
-    flex-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
     font-size: 14px;
-    padding-left: 44px;
-    column-gap: 60px;
+    column-gap: 8px;
     padding-top: 4px;
 }
 .profile-name,
